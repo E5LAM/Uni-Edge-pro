@@ -1,0 +1,95 @@
+:root{
+    --border: 1px solid rgba(128, 128, 128, 0.486) ;
+    --primary-color: #1A294A;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+} 
+
+.navbar-nav{
+    margin: auto;
+    width: 90vw;
+}
+.collapse .navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.collapse .navbar-brand img{
+    width: 11vw;
+}
+
+.collapse .navbar-nav .nav-link{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: 1px solid rgba(43, 43, 43, 0.651);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    transition: all .3s ease-in-out;
+}
+.collapse .navbar-nav .nav-link:hover{
+    color: whitesmoke;
+    background-color:rgba(43, 43, 43, 0.651) ;
+    border: 1.5px solid transparent;
+}
+
+        /* page title */
+.page-title{
+    display: flex;
+    padding: 4rem 3rem ;
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+.page-title h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+
+.row .card{
+    margin: 2rem auto;
+    width: 25vw;
+    padding: 0 ;
+    background-color: inherit;
+    border: none;
+}
+
+.row .card img{
+    border-radius: 1rem 1rem 0 0;
+}
+.row .card h2{
+    color: #1A294A;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.row .card .publish{
+    text-transform: capitalize;
+}
+
+.row .card .description{
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    font-size: 1.2rem ;
+}
+
+.row .card a{
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: rgb(68, 68, 68) ;
+}

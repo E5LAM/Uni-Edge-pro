@@ -1,0 +1,62 @@
+:root{
+    --border: 1px solid rgba(128, 128, 128, 0.486) ;
+    --primary-color: #1A294A ;
+    --text-color: rgba(82, 82, 82,);
+}
+
+
+            /* Main Style */
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: whitesmoke;
+} 
+
+.navbar-nav{
+    margin: auto;
+    width: 90vw;
+}
+.collapse .navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.collapse .navbar-brand img{
+    width: 11vw;
+}
+
+.collapse .navbar-nav .nav-link{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: 1px solid rgba(43, 43, 43, 0.651);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    transition: all .3s ease-in-out;
+}
+.collapse .navbar-nav .nav-link:hover{
+    color: whitesmoke;
+    background-color:rgba(43, 43, 43, 0.651) ;
+    border: 1.5px solid transparent;
+}
+
+        /* page title */
+.page-title{
+    display: flex;
+    padding: 4rem 3rem ;
+    width: 100vw;
+    height: 50vh;
+    background-color: #1A294A;
+    align-items: center;
+    margin-bottom: 2rem ;
+}
+
+.page-title h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
