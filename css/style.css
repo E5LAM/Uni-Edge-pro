@@ -3,14 +3,7 @@
     --border: 1px solid rgba(128, 128, 128, 0.486) ;
 }
 
-.section{
-    width: 75vw;
-    height: 10vw;
-    margin: 5rem auto ;
-    display: flex;
-    align-items: center;
-    
-}
+
 
             /* Main Style */
 *{
@@ -19,6 +12,8 @@
 body{
     overflow-x: hidden;
     background-color: whitesmoke;
+    overflow-x: hidden;
+    padding: 0;
 } 
 
 .navbar-nav{
@@ -50,6 +45,11 @@ body{
     border: 1.5px solid transparent;
 }
 
+.nav-icon{
+    border: none;
+}
+
+
          /* Image slider */
 
 .carousel .carousel-inner{
@@ -62,33 +62,42 @@ body{
 
             /* Heading */
 
+.section{
+    width: 75vw;
+    height: 10vw;
+    margin: 5rem auto ;
+    display: flex;
+    align-items: center;
+    
+}
 .heading{
     text-align: center;
     margin: auto;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 20vh;
     align-items: center;
     position: relative;
 }
 .heading .background {
-    font-size: 6.2rem;
-    width: 100%;
+    font-size: 4.2em;
     height: 100%;
     left: 0;
     font-weight: bold;
     color: rgba(128, 128, 128, 0.25);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .5rem;
-
-    display: inline;
-    position: absolute;
+    display: block;
 }
 .heading span{
-    display: inline;
+    display: block;
     z-index: 2;
     position: relative;
 
+}
+
+.nav-toggle{
+    display: none;
 }
 
 
@@ -229,20 +238,21 @@ body{
 }
 
 .time-saving .box {
-    padding: 1rem;
+    padding: 15px;
     border: 1px solid whitesmoke;
     border-radius: .5rem ;
     width: max-content;
     margin:  auto;
+    position: relative;
 }
 
 .time-saving .box::after{
     content: '';
     position: absolute;
-    top: 40%;
-    left: 8.5%;
-    width: 6rem ;
-    height: 1.2rem ;
+    top: 68px;
+    left: -91px;
+    width: 90px ;
+    height: 24px ;
     padding: .5rem;
     z-index: 2;
     background-color: gray;
@@ -251,20 +261,20 @@ body{
 .time-saving .box::before{
     content: '';
     position: absolute;
-    top: 40%;
-    right: 8.4%;
-    width: 6rem ;
-    height: 1.2rem ;
+    top: 68px;
+    right: -91px;
+    width: 90px ;
+    height: 24px ;
     padding: .5rem;
     z-index: 2;
     background-color: gray;
     border-radius: 0 2rem 2rem 0;
 }
 .time-saving .icon::before{
-    right: 9.7%;
+    right: -91px;
 }
 .time-saving .icon::after{
-    left: 9.7%;
+    left: -91px;
 }
 
 .time-saving .box .text{
@@ -359,7 +369,7 @@ body{
     margin: 5rem  auto ;
     width: 53vw;
     border: var(--border);
-    height: 25vw;
+    height: 60vh;
     padding: 1.3rem;
     background-color: whitesmoke;
     border-radius: 2.3rem ;
@@ -429,4 +439,110 @@ body{
     color: rgb(63, 63, 63);
     font-size: 1.3rem;
     text-align: center;
+}
+
+
+@media screen and (max-width: 1000px){
+   
+    .nav-toggle{
+        width: 100vw;
+        height: 13vh;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .nav-toggle div{
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .nav-toggle img{
+        margin: 0;
+        width: 100px;
+        position: absolute;
+        right: 0;
+    }
+    .collapse .nav-item .nav-link{
+        border: none;
+        margin: .3rem auto ;
+        font-size: 1.2em ;
+    }
+    .collapse .navbar-brand img  , .collapse .nav-item .none{
+        display: none;
+        
+    }
+
+    .carousel .carousel-inner{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .section{
+        width: 100vw;
+    }
+    .section .heading{
+        width: 90vw;
+    }
+    .section .heading .background{
+        font-size: 3em;
+        margin: auto;
+    }
+
+    .row .main-box-left , .row .main-box-right{
+        margin: 1rem auto;
+        width: 50vw;
+    }
+
+    .row .text-box-left , .row .text-box-right{
+        padding: 1rem;
+    }
+    .row .text-box-left .logo, .row .text-box-right .logo{
+        font-size: 1.5em;
+        margin: .15em auto;
+    }
+    .main-box-left .text-box-left .text  ,
+    .main-box-right .text-box-right .text{
+        line-height: 1rem;
+        font-size: .9em;
+    }
+
+     .time-saving{
+        width: 100vw;
+
+     }
+     .time-saving .row{
+        width: 100vw;
+        margin: 1rem auto;
+        padding: 0;
+     }
+
+     .time-saving .row .box{
+        margin-left: 6rem;
+     }
+     .time-saving .icon{
+        margin-bottom: 2rem;
+     }
+
+     .time-saving .list-box{
+        width: 70%;
+        padding: .2rem .5rem ;
+     }
+
+    .function-section{
+        flex-direction: column;
+
+    }
+    
+    .function-section .function-box{
+        padding: .2rem ;
+        width: 40vw;
+        margin-bottom: 3rem;
+    }
+
+    .sale-box{
+        width: 57vw;
+        height: 40vh;
+    }
 }
