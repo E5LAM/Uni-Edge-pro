@@ -46,6 +46,10 @@ body{
     border: 1.5px solid transparent;
 }
 
+.collapse .navbar-nav li .home{
+    display: none;
+}
+
 .nav-icon{
     border: none;
 }
@@ -199,6 +203,7 @@ body{
     z-index: 3;
     background-color: white;
     border-radius: .5rem ;
+    overflow: hidden;
 }
 
 .main-box-left .text-box-left{
@@ -472,65 +477,8 @@ footer .footer-item .item i{
     margin-right:.2em ;
 }
 
+
 @media screen and (max-width: 1000px){
-    .time-saving .section .background{
-        margin-right:5.5rem ;
-        margin-bottom: 4rem;
-    }
-    .time-saving .box {
-        padding: 10px;
-        margin-top: 3rem;
-    }
-    
-    .time-saving .box::after{
-        top: 50px;
-        left: -73px;
-        width: 72px ;
-        height: 18px ;
-        padding: .5rem;
-    }
-    .time-saving .box::before{
-        top: 50px;
-        right: -73px;
-        width: 72px ;
-        height: 18px ;
-        padding: .5rem;
-    }
-    .time-saving .icon::before{
-        right: -73px;
-    }
-    .time-saving .icon::after{
-        left: -73px;
-    }
-
-    .time-saving .box .text{
-        padding: .8em 2.7em .3em;
-        font-size: 1.1em ;
-    }
-    
-    
-    
-    .time-saving .box .text i{
-        font-weight: bold;
-        font-size: 1em;
-    }
-
-    .time-saving .box .text span{
-        border-radius: 1em;
-        height: 2.2em;
-        width: .1em;
-        padding: .55em .4em;
-        right: 5%;
-        top: 30%;
-    }
-
-    .time-saving .box .text i{
-        font-weight: bold;
-        font-size: 1.3em;
-    }
-}
-
-@media screen and (max-width: 700px){
    
     .nav-toggle{
         width: 100vw;
@@ -561,6 +509,10 @@ footer .footer-item .item i{
     .collapse .navbar-brand img  , .collapse .nav-item .none{
         display: none;
         
+    }
+
+    nav li .home{
+        display: block;
     }
 
     .carousel .carousel-inner{
@@ -639,7 +591,67 @@ footer .footer-item .item i{
     }
 }
 
+@media screen and (max-width: 700px){
+    .time-saving .section .background{
+        margin-right:5.5rem ;
+        margin-bottom: 4rem;
+    }
+    .time-saving .box {
+        padding: 10px;
+        margin-top: 3rem;
+    }
+    
+    .time-saving .box::after{
+        top: 50px;
+        left: -73px;
+        width: 72px ;
+        height: 18px ;
+        padding: .5rem;
+    }
+    .time-saving .box::before{
+        top: 50px;
+        right: -73px;
+        width: 72px ;
+        height: 18px ;
+        padding: .5rem;
+    }
+    .time-saving .icon::before{
+        right: -73px;
+    }
+    .time-saving .icon::after{
+        left: -73px;
+    }
+
+    .time-saving .box .text{
+        padding: .8em 2.7em .3em;
+        font-size: 1.1em ;
+    }
+    
+    
+    
+    .time-saving .box .text i{
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .time-saving .box .text span{
+        border-radius: 1em;
+        height: 2.2em;
+        width: .1em;
+        padding: .55em .4em;
+        right: 5%;
+        top: 30%;
+    }
+
+    .time-saving .box .text i{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+}
 
 @media screen and (max-width: 400px){
-
+    .section .background{
+        width: 100%;
+        font-size: large;
+    }
 }
