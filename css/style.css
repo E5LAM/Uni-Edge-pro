@@ -14,6 +14,7 @@ body{
     background-color: whitesmoke;
     overflow-x: hidden;
     padding: 0;
+    width: 100vw;
 } 
 
 .navbar-nav{
@@ -327,7 +328,7 @@ body{
 
 .time-saving .list-box h4{
     text-transform: uppercase;
-    margin-left: 2rem ;
+    margin-left: 2em ;
     margin-bottom: 1.5rem;
 }
 
@@ -441,8 +442,95 @@ body{
     text-align: center;
 }
 
+footer{
+    width: 100vw;
+    background-color: #1A294A;
+    color: white;
+    padding: 1em 4em ;
+    margin-bottom: 0;
+    height: 40vh;
+}
+
+footer .footer-item{
+    margin: 1em auto;
+}
+
+footer .footer-item img{
+    width: 50%;
+    margin: -2em auto 0;
+    background-color: white;
+    border-radius: 1.3em;
+    box-shadow: inset 10px 10px 15px rgba(128, 128, 128, 0.568),
+                inset -10px -10px 15px rgba(128, 128, 128, 0.568);
+}
+
+footer .footer-item .item{
+    margin: 0em auto .5em;
+    font-size: 1.2em;
+}
+footer .footer-item .item i{
+    margin-right:.2em ;
+}
 
 @media screen and (max-width: 1000px){
+    .time-saving .section .background{
+        margin-right:5.5rem ;
+        margin-bottom: 4rem;
+    }
+    .time-saving .box {
+        padding: 10px;
+        margin-top: 3rem;
+    }
+    
+    .time-saving .box::after{
+        top: 50px;
+        left: -73px;
+        width: 72px ;
+        height: 18px ;
+        padding: .5rem;
+    }
+    .time-saving .box::before{
+        top: 50px;
+        right: -73px;
+        width: 72px ;
+        height: 18px ;
+        padding: .5rem;
+    }
+    .time-saving .icon::before{
+        right: -73px;
+    }
+    .time-saving .icon::after{
+        left: -73px;
+    }
+
+    .time-saving .box .text{
+        padding: .8em 2.7em .3em;
+        font-size: 1.1em ;
+    }
+    
+    
+    
+    .time-saving .box .text i{
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .time-saving .box .text span{
+        border-radius: 1em;
+        height: 2.2em;
+        width: .1em;
+        padding: .55em .4em;
+        right: 5%;
+        top: 30%;
+    }
+
+    .time-saving .box .text i{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 700px){
    
     .nav-toggle{
         width: 100vw;
@@ -504,6 +592,10 @@ body{
     }
     .main-box-left .text-box-left .text  ,
     .main-box-right .text-box-right .text{
+        overflow: hidden;
+    }
+    .main-box-left .text-box-left .text  ,
+    .main-box-right .text-box-right .text{
         line-height: 1rem;
         font-size: .9em;
     }
@@ -545,4 +637,9 @@ body{
         width: 57vw;
         height: 40vh;
     }
+}
+
+
+@media screen and (max-width: 400px){
+
 }
