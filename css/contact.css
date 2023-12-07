@@ -1,0 +1,86 @@
+:root{
+    --border: 1px solid rgba(128, 128, 128, 0.486) ;
+    --primary-color: #1A294A ;
+    --text-color: rgba(82, 82, 82,);
+}
+
+
+.heading{
+    color: var(--primary-color) ;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem auto 1rem ;
+    font-weight: bold;
+}
+
+.contact-box {
+    background-color: white;
+    box-shadow: .65rem .65rem 1.5rem gray;
+    width: 70vw;
+    margin: 0 auto 2rem ;
+    padding: 1rem 2rem  ;
+    overflow: hidden;
+}
+
+.form-box{
+    padding: 0rem 4rem 1rem 1rem ;
+    width: 40%;
+    margin: auto;
+
+}
+
+.contact-box .row label{
+    display: block;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contact-box .row input{
+    width: 70%;
+    margin: 0 1rem 3rem .5rem ;
+    border-radius: .7rem;
+    height: 3rem;
+    padding: .2rem .5rem ;
+    font-size: 1.2rem ;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact-box .row .texterea{
+    width: 70%;
+    margin: 0 1rem 3rem .5rem ;
+    border-radius: .7rem;
+    height: 6rem;
+    padding: .2rem .5rem ;
+    font-size: 1.2rem ;
+    font-weight: 500;
+    color: var(--text-color);
+    border: 2px solid rgb(41, 41, 41);
+}
+
+.contact-box .row .submit{
+    width: 30% ;
+    color: whitesmoke;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    text-align: center;
+    text-transform: capitalize ;
+    border: 3px solid var(--primary-color);
+    border-radius: 2rem ;
+    height: 3.5rem ;
+    transition: all .3s ease-in-out;
+}
+
+.contact-box .row .submit:hover{
+    background-color: whitesmoke;
+    color: var(--primary-color);
+}
+
+.contact-box .row .info-box{
+    background-color: var(--primary-color);
+    color: white;
+    margin: .5rem auto;
+    width: 60%;
+}

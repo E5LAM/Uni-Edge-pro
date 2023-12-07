@@ -29,6 +29,7 @@ body{
 
 .collapse .navbar-brand img{
     width: 11vw;
+    margin-right: 6rem ;
 }
 
 .collapse .navbar-nav .nav-link{
@@ -655,3 +656,4 @@ footer .footer-item .item i{
         font-size: large;
     }
 }
+
