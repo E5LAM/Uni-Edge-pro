@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 body{
-    overflow-x: hidden;
     background-color: whitesmoke;
     overflow-x: hidden;
     padding: 0;
@@ -512,6 +511,13 @@ footer .row .footer-item:nth-child(3){
         position: absolute;
         right: -2%;
     }
+
+    .nav-toggle button{
+        border: none;
+        padding: .1em  .3em;
+        color: white;
+
+    }
     .collapse .nav-item .nav-link{
         border: none;
         margin: .3rem auto ;
@@ -608,6 +614,8 @@ footer .row .footer-item:nth-child(3){
     footer .footer-item img{
         width: 8em;
     }
+
+    
     
 }
 

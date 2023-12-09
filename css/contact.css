@@ -133,3 +133,46 @@
 .contact-box .info-box .info-content p:nth-child(3){
     margin-left: 4rem;
 }
+
+@media screen and (max-width: 993px){
+    .contact-box{
+        width: 100vw;
+        margin-top: 2em;
+    }
+
+}
+@media screen and (max-width: 750px){
+    .contact-box .row-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+    
+    .contact-box .info-box{
+        width: 80vw;
+        height: auto;
+    }
+
+    .contact-box .info-item{
+        margin: .5em auto ;
+        border-radius: 2rem;
+    }
+
+    .contact-box .info-item .item{
+        font-size: 1.2em;
+    }
+
+    .contact-box .info-box .info-content p{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact-box .info-box{
+        width: 90vw;
+        height: auto;
+    }
+}

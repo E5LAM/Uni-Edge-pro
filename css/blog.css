@@ -93,3 +93,29 @@ body{
     text-decoration: underline;
     color: rgb(68, 68, 68) ;
 }
+
+@media screen and (max-width: 993px){
+    .page-title{
+        height: auto;
+        font-size: 2em;
+    }
+
+    .row{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .row .card{
+        width: 30vw;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .row .card{
+        width: 90vw;
+    }
+
+}

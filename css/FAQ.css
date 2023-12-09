@@ -60,3 +60,11 @@ body{
     font-size: 3.5rem;
     text-transform: capitalize;
 }
+
+@media screen and (max-width: 993px){
+    .page-title{
+        height: auto;
+        font-size: 2em;
+    }
+
+}

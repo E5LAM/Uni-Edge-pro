@@ -104,3 +104,42 @@ body{
     box-shadow: 7px 7px 12px rgb(41, 41, 41, .6);
     margin: auto;
 }
+
+@media screen and (max-width: 993px){
+
+    
+    .page-title{
+        height: auto;
+        font-size: 2em;
+    }
+    .about-section{
+        padding: 1em 3em;
+    }
+
+    .about-section .heading{
+        font-size: 3em;
+        margin: 0em auto;
+    }
+
+    .vision-section img{
+        width: 60vw;
+        margin: 1em auto;
+    }
+
+    .why-us-section .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .why-us-section .row img{
+        width: 60vw ;
+        height: auto;
+        margin-left: 5em;
+    }
+    .why-us-section .row .img{
+        margin: 1em auto;
+    }
+
+    
+}
