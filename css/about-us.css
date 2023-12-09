@@ -107,7 +107,9 @@ body{
 
 @media screen and (max-width: 993px){
 
-    
+    body{
+        overflow-x: hidden;
+    }
     .page-title{
         height: auto;
         font-size: 2em;
@@ -142,4 +144,11 @@ body{
     }
 
     
+}
+
+@media screen and (max-width: 400px){
+    .why-us-section .row img{
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
 }
