@@ -51,6 +51,10 @@ body{
     display: none;
 }
 
+.collapse .navbar-nav li .faq{
+    margin-left: -2.6rem;
+}
+
 .nav-icon{
     border: none;
 }
@@ -238,6 +242,7 @@ body{
     padding: 2rem 4rem ;
     background-color: #1A294A;
     margin: 0;
+    overflow-x: hidden ;
 }
 
 .time-saving .section{
@@ -468,6 +473,7 @@ footer .footer-item img{
     border-radius: 1.3em;
     box-shadow: inset 10px 10px 15px rgba(128, 128, 128, 0.568),
                 inset -10px -10px 15px rgba(128, 128, 128, 0.568);
+    cursor: pointer;
 }
 
 footer .footer-item .item{
@@ -476,6 +482,10 @@ footer .footer-item .item{
 }
 footer .footer-item .item i{
     margin-right:.2em ;
+}
+
+footer .row .footer-item:nth-child(3){
+    margin-top: 2em;
 }
 
 
@@ -500,7 +510,7 @@ footer .footer-item .item i{
         margin: 0;
         width: 100px;
         position: absolute;
-        right: 0;
+        right: -2%;
     }
     .collapse .nav-item .nav-link{
         border: none;
@@ -514,6 +524,10 @@ footer .footer-item .item i{
 
     nav li .home{
         display: block;
+    }
+
+    .collapse .navbar-nav li .faq{
+        margin-left: 0;
     }
 
     .carousel .carousel-inner{
@@ -590,9 +604,21 @@ footer .footer-item .item i{
         width: 57vw;
         height: 40vh;
     }
+
+    footer .footer-item img{
+        width: 8em;
+    }
+    
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 770px){
+
+    .row .main-box-left .text-box-left,
+    .row .main-box-right .text-box-right{
+        height: max-content;
+        padding: .35rem ;
+        font-size: .85em;
+    }
     .time-saving .section .background{
         margin-right:5.5rem ;
         margin-bottom: 4rem;
@@ -648,12 +674,127 @@ footer .footer-item .item i{
         font-weight: bold;
         font-size: 1.3em;
     }
+
+
+    .time-saving .section .background{
+        width: 100%;
+        font-size: 2.5em;
+        margin-left: -3.5rem;
+        text-align: center;
+    }
+
+    footer {
+        padding: .2em 2em ;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    footer .footer-item{
+        margin:  0 auto 0 -4em;
+        padding: .5em 2em;
+        text-align: center;
+    }
+    footer .footer-item img{
+        width: 9.5em;
+    }
 }
 
-@media screen and (max-width: 400px){
-    .section .background{
-        width: 100%;
-        font-size: large;
+
+@media screen and (max-width: 500px){
+    .nav-toggle img{
+        right: -5%;
     }
+    .section{
+        width: 100vw;
+        margin: 2em auto -1.3em ;
+    }
+    .section .heading{
+        width: 100vw;
+    }
+    .section .heading .background{
+        font-size: 1.6em;
+        margin: 0 auto;
+    }
+
+
+    .row .main-box-left , .row .main-box-right{
+        margin: 1em auto;
+        width: 60vw;
+    }
+
+    .row .main-box-left .text-box-left ,
+    .row .main-box-right .text-box-right{
+        width: 10em;
+        height: 7.3em;
+    }
+
+    .main-box-left .text-box-left{
+        right: -20%;
+    }
+    
+    .main-box-right .text-box-right{
+        left: -20%;
+    }
+
+    .time-saving{
+        padding: 1em 2em;
+    }
+
+    .time-saving .row .box{
+        margin-left: 1.9em;
+    }
+    
+    .time-saving .section{
+        margin-left: -3em;
+    }
+
+    .time-saving .box {
+        padding: calc(15px/1.5);
+    }
+    
+    .time-saving .box::after{
+        top: calc(68px/1.55);
+        left: calc(-91px/1.55);
+        width: calc(90px/1.55) ;
+        height: calc(24px/1.55) ;
+    }
+    .time-saving .box::before{
+        top: calc(68px/1.55);
+        right: calc(-91px/1.55);
+        width: calc(90px/1.55) ;
+        height: calc(24px/1.55) ;
+    }
+    .time-saving .icon::before{
+        right: calc(-91px/1.55);
+    }
+    .time-saving .icon::after{
+        left: calc(-91px/1.55);
+    }
+
+    .time-saving .box .text{
+        padding: .9rem 2.7rem .5rem;
+        font-size: 1em;
+    }
+
+    .function-section{
+        width: 100vw;
+        margin-top: 3em;
+    }
+
+    .function-section .function-box{
+        width: 50vw;
+        
+    }
+
+    .sale-box{
+        width: 85vw;
+        height: 30vh;
+    }
+    .sale-box span{
+        width: 1.3em ;
+        height: 1.3em;
+    }
+
 }
 
