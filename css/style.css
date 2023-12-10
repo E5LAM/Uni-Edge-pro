@@ -758,7 +758,7 @@ footer .row .footer-item:nth-child(3){
     }
 
     .time-saving .row .box{
-        margin-left: 2.5em;
+        margin-left: 2.3em;
         padding: calc(15px/1.5);
     }
 
@@ -775,12 +775,12 @@ footer .row .footer-item:nth-child(3){
     }
     .time-saving .box::before{
         top: calc(68px/1.55);
-        right: calc(-91px/1.55);
+        right: calc(-91px/1.5);
         width: calc(90px/1.55) ;
         height: calc(24px/1.55) ;
     }
     .time-saving .icon::before{
-        right: calc(-91px/1.55);
+        right: calc(-91px/1.5);
     }
     .time-saving .icon::after{
         left: calc(-91px/1.52);
