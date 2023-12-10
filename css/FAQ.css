@@ -48,7 +48,7 @@ body{
     display: flex;
     padding: 4rem 3rem ;
     width: 100vw;
-    height: 50vh;
+    height: auto;
     background-color: #1A294A;
     align-items: center;
     margin-bottom: 2rem ;
@@ -60,6 +60,83 @@ body{
     font-size: 3.5rem;
     text-transform: capitalize;
 }
+
+        /* FAQ'S */
+
+.container {
+    width: 90vw;
+    margin: 2em auto;
+}
+
+
+.container .accordion {
+    background-color: inherit;
+    color: #1A294A;
+    cursor: pointer;
+    padding: .5em .8em;
+    width: 100%;
+    height: 3em;
+    text-align: left;
+    border: 1px solid black;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  .container .accordion p{
+    display: inline-block;
+    text-align: left;
+    margin-left: 1.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .panel {
+    padding: .3em .5em ;
+    color: #1A294A;
+    border: 1px solid black;
+    margin-top: .5em ;
+    overflow: hidden; 
+    transition: all .6s ease;
+    display: none;
+  }
+
+  .accordion .bar1 {
+  content: ""; /* Unicode character for "plus" sign (+) */
+  height: 1.25em;
+  width: .3em;
+  display: inline-block;
+  background-color: #1A294A;
+  float: left;
+  margin: .9em 1em .3em .25em;
+  border-radius: .2em;
+  transition: all .6s ease;
+  position: absolute;
+  top: 0;
+  left: 1%;
+}
+
+.accordion .bar2 {
+  content: ""; /* Unicode character for "minus" sign (-) */
+  height: 1.25em;
+  width: .3em;
+  display: inline-block;
+  background-color: #1A294A;
+  float: left;
+  margin: .9em 1em .3em .2em;
+  border-radius: .2em;
+  transition: all .6s ease;
+  transform: rotate(90deg) translateY(-12px);
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.change .bar1{
+    transform: rotate(90deg) ;
+    opacity: 0.3;
+ }
+
+
 
 @media screen and (max-width: 993px){
     .page-title{

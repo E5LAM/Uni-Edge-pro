@@ -47,7 +47,7 @@ body{
     display: flex;
     padding: 4rem 3rem ;
     width: 100vw;
-    height: 50vh;
+    height: auto;
     background-color: var(--primary-color);
     align-items: center;
 }
