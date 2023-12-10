@@ -107,12 +107,11 @@ body{
   display: inline-block;
   background-color: #1A294A;
   float: left;
-  margin: .9em 1em .3em .25em;
+  margin: .9em 1em .3em 2px;
   border-radius: .2em;
   transition: all .6s ease;
   position: absolute;
   top: 0;
-  left: 1%;
 }
 
 .accordion .bar2 {
