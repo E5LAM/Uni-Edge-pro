@@ -46,10 +46,14 @@
     color: var(--text-color);
     font-weight: 500;
 }
-
+.product .img{
+    margin: auto;
+    width: 100%;
+}
 .product .img img{
     width: 100%;
     border-radius: 2em;
+    margin: auto;
 }
 
 .product .img , .product .text{
@@ -60,6 +64,18 @@
     .page-title{
         height: auto;
         font-size: 2em;
+    }
+
+    .product{
+        padding: 1em 3em;
+    }
+    .heading{
+        font-size: 3em;
+    }
+    .product .img{
+        width: 60vw;
+        margin: 1em auto;
+        flex-direction: row-reverse;
     }
 
 }
