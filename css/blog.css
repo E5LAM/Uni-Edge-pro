@@ -118,4 +118,9 @@ body{
         width: 90vw;
     }
 
+    .page-title{
+        font-size: 1.5em;
+        padding: 1.5em .5em ;
+    }
+
 }

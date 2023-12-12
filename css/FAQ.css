@@ -142,5 +142,40 @@ body{
         height: auto;
         font-size: 2em;
     }
+    .container .accordion{
+        width: 80vw;
+        overflow: hidden;
 
+    }
+    .container .accordion .heading{
+        font-size: 1.15em;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .page-title{
+        font-size: 1.5em;
+        padding: 1.5em .5em ;
+    }
+    .container .accordion{
+        width: 90vw;
+        margin: auto;
+    }
+    .container .accordion .heading{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 300px){
+    .page-title{
+        font-size: 1em;
+        padding: 1.5em .5em ;
+    }
+    .container .accordion{
+        width: 90vw;
+        margin: auto;
+    }
+    .container .accordion .heading{
+        font-size: .8em;
+    }
 }

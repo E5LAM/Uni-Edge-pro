@@ -714,6 +714,11 @@ footer .row .footer-item:nth-child(3){
     footer .footer-item img{
         width: 9.5em;
     }
+
+    .page-title{
+        height: auto;
+        font-size: 2em;
+    }
 }
 
 
@@ -810,5 +815,15 @@ footer .row .footer-item:nth-child(3){
         height: 1.3em;
     }
 
-}
+    .page-title{
+        font-size: 1.5em;
+        padding: 1.5em .5em ;
+    }
 
+}
+@media screen and (max-width: 300px){
+    .page-title{
+        font-size: 1em;
+        padding: 1.5em .5em ;
+    }
+}
