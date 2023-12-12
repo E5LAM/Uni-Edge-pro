@@ -1,7 +1,60 @@
+:root{
+    --border: 1px solid rgba(128, 128, 128, 0.486) ;
+    --primary-color: #1A294A ;
+    --text-color: rgba(82, 82, 82,);
+}
+
+*{
+    box-sizing: border-box;
+}
 
 
+.page-title{
+    display: flex;
+    padding: 4rem 3rem ;
+    width: 100vw;
+    height: auto;
+    background-color: #1A294A;
+    align-items: center;
+    margin-bottom: 2rem ;
+}
 
+.page-title h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
 
+.heading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+.product{
+    padding: 3.5rem 7rem ;
+    width: 100vw;
+    margin: 2em auto;
+}
+
+.product .text p{
+    font-size: 1.6em ;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.product .img img{
+    width: 100%;
+    border-radius: 2em;
+}
+
+.product .img , .product .text{
+    margin: auto auto 3em;
+}
 
 @media screen and (max-width: 993px){
     .page-title{
