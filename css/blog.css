@@ -59,9 +59,13 @@ body{
     text-transform: capitalize;
 }
 
+.row{
+    margin-right: 2em;
+}
+
 
 .row .card{
-    margin: 2rem auto;
+    margin-bottom: 2em;
     width: 25vw;
     padding: 0 ;
     background-color: inherit;
