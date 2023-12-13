@@ -28,7 +28,7 @@ body{
 
 .collapse .navbar-brand img{
     width: 11vw;
-    margin-right: 6rem ;
+    /* margin-right: 6rem ; */
 }
 
 .collapse .navbar-nav .nav-link{
@@ -61,7 +61,7 @@ body{
 }
 
 .collapse .navbar-nav li .faq{
-    margin-left: -6.6rem;
+    /* margin-left: -6.6rem; */
     width: max-content;
 }
 
