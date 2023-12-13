@@ -61,7 +61,8 @@ body{
 }
 
 .collapse .navbar-nav li .faq{
-    margin-left: -2.6rem;
+    margin-left: -6.6rem;
+    width: max-content;
 }
 
 .nav-icon{
