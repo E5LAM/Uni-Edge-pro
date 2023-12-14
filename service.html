@@ -11,6 +11,9 @@
         <!-- font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- Image slider library (slick) -->
+        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <!-- title tag logo -->
     <link rel="shortcut icon" href="img/title tag logo.png" type="image/x-icon">
         <!-- Bootstrap -->
@@ -78,7 +81,21 @@
 
     <h1 class="heading animate__animated animate__zoomIn">our services</h1>
 
-
+    <!-- Flickity HTML init -->
+    <div class="carousel"data-flickity='{ "autoPlay": true }'>
+      <div class="carousel-cell" >
+        <img src="img/logo.jpg" alt="">
+        <p class="size">size</p>
+      </div>
+      <div class="carousel-cell" >
+        <img src="img/logo.jpg" alt="">
+        <p class="size">size</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="img/logo.jpg" alt="">
+        <p class="size">size</p>
+      </div>
+    </div>    
 
     <footer>
     <div class="container">
@@ -115,7 +132,12 @@
       </div>
     </div>
   </footer>
-    
+
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     -->
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.js"></script>

@@ -35,6 +35,8 @@
     font-size: 4rem;
 }
 
+            /* product page */
+
 .product{
     padding: 3.5rem 7rem ;
     width: 100vw;
@@ -64,6 +66,43 @@
 .product .img , .product .text{
     margin: auto auto 3em;
 }
+
+            /* service page */
+
+.carousel {
+  background: inherit;
+  margin: 2em auto 3em;
+  width: 80vw;
+
+}
+
+.carousel-cell {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-right: 10px;
+  border: none;
+  background-position: center center;
+}
+
+.carousel .carousel-cell img{
+    width: 22em;
+}
+
+.carousel .carousel-cell p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: .5em 3em .5em auto;
+}
+
+/* cell number */
+.carousel-cell:before {
+  content: "";
+  display: block;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 993px){
     .page-title{
