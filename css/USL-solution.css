@@ -69,14 +69,20 @@
 
             /* service page */
 
+.title h1{
+    text-align: center;
+    color: #1A294A;
+    text-transform: capitalize;
+    font-weight: 600;
+}
 .carousel {
   background: inherit;
-  margin: 2em auto 3em;
+  margin: 2em auto 5em;
   width: 80vw;
 
 }
 
-.carousel-cell {
+ .carousel .carousel-cell {
   width: 40%;
   height: auto;
   margin: auto;
@@ -89,15 +95,14 @@
     width: 22em;
 }
 
-.carousel .carousel-cell p{
+.service-section .carousel .carousel-cell p{
     text-align: center;
     font-weight: 500;
     font-size: 1.2em;
     margin: .5em 3em .5em auto;
 }
 
-/* cell number */
-.carousel-cell:before {
+.service-section .carousel-cell:before {
   content: "";
   display: block;
   text-align: center;
@@ -122,25 +127,25 @@
         margin: 1em auto;
         flex-direction: row-reverse;
     }
-    .carousel .carousel-cell{
+    .service-section .carousel .carousel-cell{
         overflow: hidden;
         margin-right: 2em;
     }
-    .carousel .carousel-cell img{
+    .service-section .carousel .carousel-cell img{
         width: 100%;
         height: 100%;
     }
 
 }
 @media screen and (max-width: 750px){
-    .carousel{
+    .service-section .carousel{
         width: 90vw;
     }
-    .carousel .carousel-cell{
+    .service-section .carousel .carousel-cell{
         width: 70%;
         margin-right: 2em;
     }
-    .carousel .carousel-cell p{
+    .service-section .carousel .carousel-cell p{
         margin-right: 0;
     }
 }
@@ -152,6 +157,7 @@
 
     .heading{
         font-size: 2.7em;
+        margin-bottom: 0;
     }
 
     .product .img{
@@ -161,7 +167,8 @@
         font-size: .8em;
     }
 
-    .carousel .carousel-cell{
+
+    .service-section .carousel .carousel-cell{
         width: 100%;
     }
 }
